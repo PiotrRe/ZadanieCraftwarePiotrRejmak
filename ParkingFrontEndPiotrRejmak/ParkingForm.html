@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <script type="text/javascript" src=./jQuery/jquery-3.3.1.min.js></script>
+        <script type="text/javascript" src=./jQuery/validation.js></script>
+</head>
+
+
+<body>
+
+<h1 class="mainHeader">Formularz Parkingowy</h1>
+<div class="inputForm" >
+        <form id="inputData" >
+
+                <label class="description" for="startDate">Data startu</label><br>
+                <input type="date" id="startDate" name="startdate" placeholder="Data startu..."  ><br>
+
+                <label class="description" for="endDate">Data zakończenia</label><br>
+                <input type="date" id="endDate" name="enddate" placeholder="Data zakończenia..." ><br>
+
+                <label class="description" for="placeNumber">Numer miejsca parkingowego (Parking ma 24 miejsca)</label><br>
+                <input type="number" id="placeNumber" name="placenumber" placeholder="Numer miejsca parkingowego..." min="1" step="1" max="24" ><br>
+
+                <label class="description" for="firstName">Imię</label><br>
+                <input type="text" id="firstName" name="firstname" placeholder="Imie..." ><br>
+
+                <label class="description" for="lastName">Nazwisko</label><br>
+                <input type="text" id="lastName" name="lastname" placeholder="Nazwisko..." ><br>
+
+                <label class="description" for="phoneNumber">Numer telefonu (bez spacji)</label><br>
+                <input type="text" id="phoneNumber" name="phonenumber" placeholder="Numer telefonu..." min="1" step="1" ><br>
+
+
+
+        </form>
+        <button class="submitButton" id="submitButton"  >Zarezerwuj miejsce</button>
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>
